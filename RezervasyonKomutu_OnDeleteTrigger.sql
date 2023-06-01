@@ -1,8 +1,8 @@
 USE hotel_database;
 
-SET sql_notes = 0;      -- Temporarily disable the "Table already exists" warning
+SET sql_notes = 0;    
 	
--- create table for bookings audit
+
 CREATE TABLE IF NOT EXISTS hotel_database.Bookings_Audit(
 
  audit_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -36,4 +36,4 @@ END//
 
 DELIMITER ;
 
-SET sql_notes = 1;      -- And then re-enable the warning again
+SET sql_notes = 1;    
